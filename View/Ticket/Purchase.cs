@@ -16,5 +16,10 @@ namespace TicketEase___Movie_Ticket_Management_System.View.Ticket
         {
             InitializeComponent();
         }
+
+        private void Purchase_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

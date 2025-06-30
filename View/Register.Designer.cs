@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tbPhoneNo = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tbName = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.llLogin = new System.Windows.Forms.LinkLabel();
             this.btnLogin = new System.Windows.Forms.Button();
             this.tbPassword = new System.Windows.Forms.TextBox();
@@ -38,12 +44,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tbName = new System.Windows.Forms.TextBox();
-            this.tbPhoneNo = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -68,6 +68,61 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(701, 398);
             this.panel1.TabIndex = 5;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(365, 194);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(300, 33);
+            this.dateTimePicker1.TabIndex = 13;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(360, 160);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(133, 30);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Date of Birth";
+            // 
+            // tbPhoneNo
+            // 
+            this.tbPhoneNo.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.tbPhoneNo.Location = new System.Drawing.Point(365, 119);
+            this.tbPhoneNo.Name = "tbPhoneNo";
+            this.tbPhoneNo.Size = new System.Drawing.Size(300, 33);
+            this.tbPhoneNo.TabIndex = 11;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(360, 86);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(109, 30);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Phone No.";
+            // 
+            // tbName
+            // 
+            this.tbName.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.tbName.Location = new System.Drawing.Point(33, 119);
+            this.tbName.Name = "tbName";
+            this.tbName.Size = new System.Drawing.Size(300, 33);
+            this.tbName.TabIndex = 9;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(28, 86);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(65, 30);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Email";
             // 
             // llLogin
             // 
@@ -94,16 +149,18 @@
             // 
             // tbPassword
             // 
+            this.tbPassword.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold);
             this.tbPassword.Location = new System.Drawing.Point(33, 262);
             this.tbPassword.Name = "tbPassword";
-            this.tbPassword.Size = new System.Drawing.Size(300, 22);
+            this.tbPassword.Size = new System.Drawing.Size(300, 33);
             this.tbPassword.TabIndex = 5;
             // 
             // tbEmail
             // 
+            this.tbEmail.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold);
             this.tbEmail.Location = new System.Drawing.Point(33, 194);
             this.tbEmail.Name = "tbEmail";
-            this.tbEmail.Size = new System.Drawing.Size(300, 22);
+            this.tbEmail.Size = new System.Drawing.Size(300, 33);
             this.tbEmail.TabIndex = 4;
             // 
             // label4
@@ -155,57 +212,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(28, 86);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 30);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Email";
-            // 
-            // tbName
-            // 
-            this.tbName.Location = new System.Drawing.Point(33, 119);
-            this.tbName.Name = "tbName";
-            this.tbName.Size = new System.Drawing.Size(300, 22);
-            this.tbName.TabIndex = 9;
-            // 
-            // tbPhoneNo
-            // 
-            this.tbPhoneNo.Location = new System.Drawing.Point(365, 119);
-            this.tbPhoneNo.Name = "tbPhoneNo";
-            this.tbPhoneNo.Size = new System.Drawing.Size(300, 22);
-            this.tbPhoneNo.TabIndex = 11;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(360, 86);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 30);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Phone No.";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(360, 160);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(133, 30);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Date of Birth";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(365, 194);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(300, 22);
-            this.dateTimePicker1.TabIndex = 13;
             // 
             // Register
             // 

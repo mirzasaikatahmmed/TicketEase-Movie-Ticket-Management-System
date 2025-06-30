@@ -31,14 +31,14 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tbEmail = new System.Windows.Forms.TextBox();
-            this.tbPassword = new System.Windows.Forms.TextBox();
-            this.btnLogin = new System.Windows.Forms.Button();
             this.llRegister = new System.Windows.Forms.LinkLabel();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.tbPassword = new System.Windows.Forms.TextBox();
+            this.tbEmail = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -79,59 +79,16 @@
             this.panel1.Size = new System.Drawing.Size(368, 479);
             this.panel1.TabIndex = 2;
             // 
-            // label1
+            // llRegister
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lora SemiBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(104, 40);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 45);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Welcome";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(28, 143);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(305, 30);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Enter your email and password";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(28, 202);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 30);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Email";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(28, 274);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(104, 30);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Password";
-            // 
-            // tbEmail
-            // 
-            this.tbEmail.Location = new System.Drawing.Point(33, 236);
-            this.tbEmail.Name = "tbEmail";
-            this.tbEmail.Size = new System.Drawing.Size(300, 22);
-            this.tbEmail.TabIndex = 4;
-            // 
-            // tbPassword
-            // 
-            this.tbPassword.Location = new System.Drawing.Point(33, 307);
-            this.tbPassword.Name = "tbPassword";
-            this.tbPassword.Size = new System.Drawing.Size(300, 22);
-            this.tbPassword.TabIndex = 5;
+            this.llRegister.AutoSize = true;
+            this.llRegister.Font = new System.Drawing.Font("Lora SemiBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.llRegister.Location = new System.Drawing.Point(135, 411);
+            this.llRegister.Name = "llRegister";
+            this.llRegister.Size = new System.Drawing.Size(111, 25);
+            this.llRegister.TabIndex = 7;
+            this.llRegister.TabStop = true;
+            this.llRegister.Text = "Registration";
             // 
             // btnLogin
             // 
@@ -145,16 +102,61 @@
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
             // 
-            // llRegister
+            // tbPassword
             // 
-            this.llRegister.AutoSize = true;
-            this.llRegister.Font = new System.Drawing.Font("Lora SemiBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.llRegister.Location = new System.Drawing.Point(135, 411);
-            this.llRegister.Name = "llRegister";
-            this.llRegister.Size = new System.Drawing.Size(111, 25);
-            this.llRegister.TabIndex = 7;
-            this.llRegister.TabStop = true;
-            this.llRegister.Text = "Registration";
+            this.tbPassword.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.tbPassword.Location = new System.Drawing.Point(33, 307);
+            this.tbPassword.Name = "tbPassword";
+            this.tbPassword.Size = new System.Drawing.Size(300, 33);
+            this.tbPassword.TabIndex = 5;
+            // 
+            // tbEmail
+            // 
+            this.tbEmail.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.tbEmail.Location = new System.Drawing.Point(33, 236);
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.Size = new System.Drawing.Size(300, 33);
+            this.tbEmail.TabIndex = 4;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(28, 274);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(104, 30);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Password";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(28, 202);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(65, 30);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Email";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(28, 143);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(305, 30);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Enter your email and password";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lora SemiBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(104, 40);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(149, 45);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Welcome";
             // 
             // Login
             // 

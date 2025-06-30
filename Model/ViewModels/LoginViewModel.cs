@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace TicketEase___Movie_Ticket_Management_System.Model.ViewModels
 {
-    internal class LoginViewModel
+    public class LoginViewModel
     {
+        public string Email { get; set; }
+        public string Password { get; set; }
     }
+
 }

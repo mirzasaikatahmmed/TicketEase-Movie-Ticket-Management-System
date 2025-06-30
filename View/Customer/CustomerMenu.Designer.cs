@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.menuPanel = new System.Windows.Forms.Panel();
-            this.mainPanel = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnDashboard = new System.Windows.Forms.Button();
-            this.btnPurchaseTickets = new System.Windows.Forms.Button();
-            this.btnPurchaseHistory = new System.Windows.Forms.Button();
-            this.btnProfile = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
+            this.btnProfile = new System.Windows.Forms.Button();
+            this.btnPurchaseHistory = new System.Windows.Forms.Button();
+            this.btnPurchaseTickets = new System.Windows.Forms.Button();
+            this.btnDashboard = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.mainPanel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -54,6 +54,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1008, 49);
             this.panel1.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TicketEase___Movie_Ticket_Management_System.Properties.Resources.icons8_cross_96;
+            this.pictureBox1.Location = new System.Drawing.Point(967, 7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(38, 39);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -79,70 +89,18 @@
             this.menuPanel.Size = new System.Drawing.Size(272, 612);
             this.menuPanel.TabIndex = 2;
             // 
-            // mainPanel
+            // btnLogout
             // 
-            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainPanel.Location = new System.Drawing.Point(272, 49);
-            this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(736, 612);
-            this.mainPanel.TabIndex = 3;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::TicketEase___Movie_Ticket_Management_System.Properties.Resources.icons8_movie_ticket_100;
-            this.pictureBox2.Location = new System.Drawing.Point(58, 27);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(140, 140);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::TicketEase___Movie_Ticket_Management_System.Properties.Resources.icons8_cross_96;
-            this.pictureBox1.Location = new System.Drawing.Point(967, 7);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(38, 39);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnDashboard
-            // 
-            this.btnDashboard.BackColor = System.Drawing.Color.DarkRed;
-            this.btnDashboard.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashboard.ForeColor = System.Drawing.Color.White;
-            this.btnDashboard.Location = new System.Drawing.Point(17, 211);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(234, 60);
-            this.btnDashboard.TabIndex = 7;
-            this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.UseVisualStyleBackColor = false;
-            // 
-            // btnPurchaseTickets
-            // 
-            this.btnPurchaseTickets.BackColor = System.Drawing.Color.DarkRed;
-            this.btnPurchaseTickets.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPurchaseTickets.ForeColor = System.Drawing.Color.White;
-            this.btnPurchaseTickets.Location = new System.Drawing.Point(17, 277);
-            this.btnPurchaseTickets.Name = "btnPurchaseTickets";
-            this.btnPurchaseTickets.Size = new System.Drawing.Size(234, 60);
-            this.btnPurchaseTickets.TabIndex = 8;
-            this.btnPurchaseTickets.Text = "Purchase Tickets";
-            this.btnPurchaseTickets.UseVisualStyleBackColor = false;
-            // 
-            // btnPurchaseHistory
-            // 
-            this.btnPurchaseHistory.BackColor = System.Drawing.Color.DarkRed;
-            this.btnPurchaseHistory.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPurchaseHistory.ForeColor = System.Drawing.Color.White;
-            this.btnPurchaseHistory.Location = new System.Drawing.Point(15, 343);
-            this.btnPurchaseHistory.Name = "btnPurchaseHistory";
-            this.btnPurchaseHistory.Size = new System.Drawing.Size(234, 60);
-            this.btnPurchaseHistory.TabIndex = 9;
-            this.btnPurchaseHistory.Text = "Purchase History";
-            this.btnPurchaseHistory.UseVisualStyleBackColor = false;
+            this.btnLogout.BackColor = System.Drawing.Color.DarkRed;
+            this.btnLogout.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.Location = new System.Drawing.Point(17, 540);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(234, 60);
+            this.btnLogout.TabIndex = 11;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnProfile
             // 
@@ -155,18 +113,65 @@
             this.btnProfile.TabIndex = 10;
             this.btnProfile.Text = "Profile";
             this.btnProfile.UseVisualStyleBackColor = false;
+            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
             // 
-            // btnLogout
+            // btnPurchaseHistory
             // 
-            this.btnLogout.BackColor = System.Drawing.Color.DarkRed;
-            this.btnLogout.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Location = new System.Drawing.Point(17, 540);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(234, 60);
-            this.btnLogout.TabIndex = 11;
-            this.btnLogout.Text = "Logout";
-            this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnPurchaseHistory.BackColor = System.Drawing.Color.DarkRed;
+            this.btnPurchaseHistory.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPurchaseHistory.ForeColor = System.Drawing.Color.White;
+            this.btnPurchaseHistory.Location = new System.Drawing.Point(15, 343);
+            this.btnPurchaseHistory.Name = "btnPurchaseHistory";
+            this.btnPurchaseHistory.Size = new System.Drawing.Size(234, 60);
+            this.btnPurchaseHistory.TabIndex = 9;
+            this.btnPurchaseHistory.Text = "Purchase History";
+            this.btnPurchaseHistory.UseVisualStyleBackColor = false;
+            this.btnPurchaseHistory.Click += new System.EventHandler(this.btnPurchaseHistory_Click);
+            // 
+            // btnPurchaseTickets
+            // 
+            this.btnPurchaseTickets.BackColor = System.Drawing.Color.DarkRed;
+            this.btnPurchaseTickets.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPurchaseTickets.ForeColor = System.Drawing.Color.White;
+            this.btnPurchaseTickets.Location = new System.Drawing.Point(17, 277);
+            this.btnPurchaseTickets.Name = "btnPurchaseTickets";
+            this.btnPurchaseTickets.Size = new System.Drawing.Size(234, 60);
+            this.btnPurchaseTickets.TabIndex = 8;
+            this.btnPurchaseTickets.Text = "Purchase Tickets";
+            this.btnPurchaseTickets.UseVisualStyleBackColor = false;
+            this.btnPurchaseTickets.Click += new System.EventHandler(this.btnPurchaseTickets_Click);
+            // 
+            // btnDashboard
+            // 
+            this.btnDashboard.BackColor = System.Drawing.Color.DarkRed;
+            this.btnDashboard.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.ForeColor = System.Drawing.Color.White;
+            this.btnDashboard.Location = new System.Drawing.Point(17, 211);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(234, 60);
+            this.btnDashboard.TabIndex = 7;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.UseVisualStyleBackColor = false;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::TicketEase___Movie_Ticket_Management_System.Properties.Resources.icons8_movie_ticket_100;
+            this.pictureBox2.Location = new System.Drawing.Point(58, 27);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(140, 140);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // mainPanel
+            // 
+            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainPanel.Location = new System.Drawing.Point(272, 49);
+            this.mainPanel.Name = "mainPanel";
+            this.mainPanel.Size = new System.Drawing.Size(736, 612);
+            this.mainPanel.TabIndex = 3;
             // 
             // CustomerMenu
             // 
@@ -182,9 +187,9 @@
             this.Text = "CustomerMenu";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

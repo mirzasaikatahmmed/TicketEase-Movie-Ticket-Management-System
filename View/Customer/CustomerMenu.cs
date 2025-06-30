@@ -16,10 +16,46 @@ namespace TicketEase___Movie_Ticket_Management_System.View.Customer
         {
             InitializeComponent();
         }
+        private void LoadFormInPanel(Form form)
+        {
+            mainPanel.Controls.Clear();
+            form.TopLevel = false;
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.Dock = DockStyle.Fill;
+            mainPanel.Controls.Add(form);
+            form.Show();
+        }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            LoadFormInPanel(new Dashboard());
+        }
+
+        private void btnPurchaseTickets_Click(object sender, EventArgs e)
+        {
+            LoadFormInPanel(new Ticket.Purchase());
+        }
+
+        private void btnPurchaseHistory_Click(object sender, EventArgs e)
+        {
+            LoadFormInPanel(new Ticket.History());
+        }
+
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+            LoadFormInPanel(new Profile());
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            Login loginForm = new Login();
+            loginForm.Show();
+            this.Hide();
         }
     }
 }
