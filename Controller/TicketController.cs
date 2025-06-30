@@ -16,7 +16,10 @@ namespace TicketEase___Movie_Ticket_Management_System.Controller
         public bool PurchaseTicket(Ticket ticket)
         {
             bool stockReduced = movieModel.ReduceTicketQuantity(ticket.MovieId, ticket.Quantity);
-            if (!stockReduced) return false;
+            if (!stockReduced)
+            {
+                return false;
+            }
 
             return ticket.Add();
         }
