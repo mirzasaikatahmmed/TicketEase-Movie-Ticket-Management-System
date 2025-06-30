@@ -1,0 +1,46 @@
+-- USERS TABLE
+CREATE TABLE Users (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Name NVARCHAR(100) NOT NULL,
+    Email NVARCHAR(100) NOT NULL UNIQUE,
+    Password NVARCHAR(255) NOT NULL,
+    PhoneNumber NVARCHAR(20),
+    DateOfBirth DATE,
+    Role NVARCHAR(20) DEFAULT 'Customer', -- Optional: 'Admin', 'Employee', 'Customer'
+    CreatedAt DATETIME DEFAULT GETDATE()
+);
+
+-- MOVIES TABLE
+CREATE TABLE Movies (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Title NVARCHAR(100) NOT NULL,
+    Genre NVARCHAR(50),
+    DurationMinutes INT,
+    ShowTime DATETIME,
+    Price DECIMAL(10, 2),
+    TicketQuantity INT, -- total available tickets
+    CreatedAt DATETIME DEFAULT GETDATE()
+);
+
+-- TICKETS TABLE
+CREATE TABLE Tickets (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    UserId INT FOREIGN KEY REFERENCES Users(Id),
+    MovieId INT FOREIGN KEY REFERENCES Movies(Id),
+    Quantity INT NOT NULL,
+    TotalAmount DECIMAL(10, 2),
+    PurchaseDate DATETIME DEFAULT GETDATE()
+);
+
+INSERT INTO Movies (Title, Genre, DurationMinutes, ShowTime, Price, TicketQuantity)
+VALUES
+('The Silent Hour', 'Thriller', 110, '2025-07-05 19:30:00', 400.00, 50),
+('Galactic Drift', 'Science Fiction', 135, '2025-07-06 17:00:00', 450.00, 60),
+('Laugh Factory', 'Comedy', 95, '2025-07-05 20:00:00', 350.00, 80),
+('Haunted Past', 'Horror', 100, '2025-07-07 21:00:00', 380.00, 40),
+('Eternal Spring', 'Romance', 120, '2025-07-08 16:30:00', 400.00, 70),
+('Code Zero', 'Action', 130, '2025-07-06 18:00:00', 420.00, 55),
+('Jungle Echoes', 'Adventure', 115, '2025-07-07 15:00:00', 370.00, 65),
+('Mind Maze', 'Mystery', 105, '2025-07-09 19:00:00', 390.00, 75),
+('The Last Draft', 'Drama', 125, '2025-07-06 14:00:00', 360.00, 45),
+('Pixel War', 'Fantasy', 140, '2025-07-08 20:30:00', 450.00, 100);
