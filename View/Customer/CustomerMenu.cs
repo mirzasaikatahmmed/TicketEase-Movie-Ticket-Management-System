@@ -15,6 +15,7 @@ namespace TicketEase___Movie_Ticket_Management_System.View.Customer
         public CustomerMenu()
         {
             InitializeComponent();
+            LoadFormInPanel(new Dashboard());
         }
         private void LoadFormInPanel(Form form)
         {

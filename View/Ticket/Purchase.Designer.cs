@@ -82,11 +82,12 @@
             // 
             // cmbMovies
             // 
+            this.cmbMovies.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold);
             this.cmbMovies.FormattingEnabled = true;
-            this.cmbMovies.ItemHeight = 16;
+            this.cmbMovies.ItemHeight = 30;
             this.cmbMovies.Location = new System.Drawing.Point(17, 114);
             this.cmbMovies.Name = "cmbMovies";
-            this.cmbMovies.Size = new System.Drawing.Size(707, 24);
+            this.cmbMovies.Size = new System.Drawing.Size(707, 38);
             this.cmbMovies.TabIndex = 3;
             this.cmbMovies.SelectedIndexChanged += new System.EventHandler(this.cmbMovies_SelectedIndexChanged);
             // 
