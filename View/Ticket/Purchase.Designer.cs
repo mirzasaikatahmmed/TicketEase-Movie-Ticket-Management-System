@@ -36,7 +36,7 @@
             this.txtDuration = new System.Windows.Forms.Label();
             this.txtShowDate = new System.Windows.Forms.Label();
             this.txtShowTime = new System.Windows.Forms.Label();
-            this.txtPrice = new System.Windows.Forms.Label();
+            this.txtPriceLabel = new System.Windows.Forms.Label();
             this.txtAvailableTickets = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
@@ -45,6 +45,7 @@
             this.gbUserInformation = new System.Windows.Forms.GroupBox();
             this.txtCustomerName = new System.Windows.Forms.Label();
             this.btnPurchase = new System.Windows.Forms.Button();
+            this.txtPrice = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.gbUserInformation.SuspendLayout();
@@ -130,15 +131,15 @@
             this.txtShowTime.TabIndex = 7;
             this.txtShowTime.Text = "Show Time: 18:30:00";
             // 
-            // txtPrice
+            // txtPriceLabel
             // 
-            this.txtPrice.AutoSize = true;
-            this.txtPrice.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrice.Location = new System.Drawing.Point(12, 273);
-            this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(215, 30);
-            this.txtPrice.TabIndex = 8;
-            this.txtPrice.Text = "Ticket Price: 500BDT";
+            this.txtPriceLabel.AutoSize = true;
+            this.txtPriceLabel.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPriceLabel.Location = new System.Drawing.Point(12, 273);
+            this.txtPriceLabel.Name = "txtPriceLabel";
+            this.txtPriceLabel.Size = new System.Drawing.Size(132, 30);
+            this.txtPriceLabel.TabIndex = 8;
+            this.txtPriceLabel.Text = "Ticket Price:";
             // 
             // txtAvailableTickets
             // 
@@ -222,11 +223,22 @@
             this.btnPurchase.UseVisualStyleBackColor = false;
             this.btnPurchase.Click += new System.EventHandler(this.btnPurchase_Click);
             // 
+            // txtPrice
+            // 
+            this.txtPrice.AutoSize = true;
+            this.txtPrice.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrice.Location = new System.Drawing.Point(150, 273);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(50, 30);
+            this.txtPrice.TabIndex = 16;
+            this.txtPrice.Text = "500";
+            // 
             // Purchase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(736, 612);
+            this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.btnPurchase);
             this.Controls.Add(this.gbUserInformation);
             this.Controls.Add(this.txtTotalAmount);
@@ -234,7 +246,7 @@
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtAvailableTickets);
-            this.Controls.Add(this.txtPrice);
+            this.Controls.Add(this.txtPriceLabel);
             this.Controls.Add(this.txtShowTime);
             this.Controls.Add(this.txtShowDate);
             this.Controls.Add(this.txtDuration);
@@ -267,7 +279,7 @@
         private System.Windows.Forms.Label txtDuration;
         private System.Windows.Forms.Label txtShowDate;
         private System.Windows.Forms.Label txtShowTime;
-        private System.Windows.Forms.Label txtPrice;
+        private System.Windows.Forms.Label txtPriceLabel;
         private System.Windows.Forms.Label txtAvailableTickets;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
@@ -276,5 +288,6 @@
         private System.Windows.Forms.GroupBox gbUserInformation;
         private System.Windows.Forms.Label txtCustomerName;
         private System.Windows.Forms.Button btnPurchase;
+        private System.Windows.Forms.Label txtPrice;
     }
 }

@@ -24,7 +24,7 @@ namespace TicketEase___Movie_Ticket_Management_System.View.Ticket
 
         private void Purchase_Load(object sender, EventArgs e)
         {
-            txtCustomerName.Text = User.Current.Name;
+            txtCustomerName.Text = $"Name: {User.Current.Name}";
 
             movieData = movieController.GetAllMovies();
 
@@ -39,12 +39,12 @@ namespace TicketEase___Movie_Ticket_Management_System.View.Ticket
 
             DataRowView selected = cmbMovies.SelectedItem as DataRowView;
 
-            txtGenre.Text = selected["Genre"].ToString();
-            txtDuration.Text = selected["DurationMinutes"].ToString() + " min";
-            txtShowDate.Text = Convert.ToDateTime(selected["ShowTime"]).ToString("dd-MM-yyyy");
-            txtShowTime.Text = Convert.ToDateTime(selected["ShowTime"]).ToString("hh:mm tt");
+            txtGenre.Text = $"Genre: {selected["Genre"].ToString()}";
+            txtDuration.Text = $"Duration: {selected["DurationMinutes"].ToString() + " min"}";
+            txtShowDate.Text = $"Show Date: {Convert.ToDateTime(selected["ShowTime"]).ToString("dd-MM-yyyy")}";
+            txtShowTime.Text = $"Show Time: {Convert.ToDateTime(selected["ShowTime"]).ToString("hh:mm tt")}";
             txtPrice.Text = selected["Price"].ToString();
-            txtAvailableTickets.Text = selected["TicketQuantity"].ToString();
+            txtAvailableTickets.Text = $"Available Tickets: {selected["TicketQuantity"].ToString()}";
 
             CalculateTotal();
         }

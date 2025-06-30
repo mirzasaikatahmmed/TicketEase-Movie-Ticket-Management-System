@@ -112,6 +112,7 @@
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(300, 33);
             this.tbPassword.TabIndex = 5;
+            this.tbPassword.UseSystemPasswordChar = true;
             // 
             // tbEmail
             // 
@@ -155,7 +156,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lora SemiBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(104, 40);
+            this.label1.Location = new System.Drawing.Point(110, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(149, 45);
             this.label1.TabIndex = 0;

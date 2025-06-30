@@ -86,6 +86,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(241, 33);
             this.txtPassword.TabIndex = 28;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // label6
             // 
@@ -93,9 +94,9 @@
             this.label6.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(451, 300);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(109, 30);
+            this.label6.Size = new System.Drawing.Size(156, 30);
             this.label6.TabIndex = 27;
-            this.label6.Text = "Password:";
+            this.label6.Text = "New Password:";
             // 
             // txtRole
             // 
