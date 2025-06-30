@@ -34,14 +34,14 @@
             this.cmbMovies = new System.Windows.Forms.ComboBox();
             this.txtGenre = new System.Windows.Forms.Label();
             this.txtDuration = new System.Windows.Forms.Label();
+            this.txtShowDate = new System.Windows.Forms.Label();
             this.txtShowTime = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.txtPrice = new System.Windows.Forms.Label();
             this.txtAvailableTickets = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTotalAmount = new System.Windows.Forms.TextBox();
             this.gbUserInformation = new System.Windows.Forms.GroupBox();
             this.txtCustomerName = new System.Windows.Forms.Label();
             this.btnPurchase = new System.Windows.Forms.Button();
@@ -87,6 +87,7 @@
             this.cmbMovies.Name = "cmbMovies";
             this.cmbMovies.Size = new System.Drawing.Size(707, 24);
             this.cmbMovies.TabIndex = 3;
+            this.cmbMovies.SelectedIndexChanged += new System.EventHandler(this.cmbMovies_SelectedIndexChanged);
             // 
             // txtGenre
             // 
@@ -108,25 +109,26 @@
             this.txtDuration.TabIndex = 5;
             this.txtDuration.Text = "Duration: 200 Minutes";
             // 
+            // txtShowDate
+            // 
+            this.txtShowDate.AutoSize = true;
+            this.txtShowDate.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtShowDate.Location = new System.Drawing.Point(12, 218);
+            this.txtShowDate.Name = "txtShowDate";
+            this.txtShowDate.Size = new System.Drawing.Size(235, 30);
+            this.txtShowDate.TabIndex = 6;
+            this.txtShowDate.Text = "Show Date: 2025-07-05";
+            this.txtShowDate.Click += new System.EventHandler(this.txtShowTime_Click);
+            // 
             // txtShowTime
             // 
             this.txtShowTime.AutoSize = true;
             this.txtShowTime.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtShowTime.Location = new System.Drawing.Point(12, 218);
+            this.txtShowTime.Location = new System.Drawing.Point(496, 218);
             this.txtShowTime.Name = "txtShowTime";
-            this.txtShowTime.Size = new System.Drawing.Size(235, 30);
-            this.txtShowTime.TabIndex = 6;
-            this.txtShowTime.Text = "Show Date: 2025-07-05";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(496, 218);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(206, 30);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Show Time: 18:30:00";
+            this.txtShowTime.Size = new System.Drawing.Size(206, 30);
+            this.txtShowTime.TabIndex = 7;
+            this.txtShowTime.Text = "Show Time: 18:30:00";
             // 
             // txtPrice
             // 
@@ -165,6 +167,7 @@
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(157, 33);
             this.numericUpDown1.TabIndex = 11;
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // label5
             // 
@@ -176,14 +179,14 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "Total Amount";
             // 
-            // textBox1
+            // txtTotalAmount
             // 
-            this.textBox1.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold);
-            this.textBox1.Location = new System.Drawing.Point(20, 510);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(157, 33);
-            this.textBox1.TabIndex = 13;
+            this.txtTotalAmount.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.txtTotalAmount.Location = new System.Drawing.Point(20, 510);
+            this.txtTotalAmount.Name = "txtTotalAmount";
+            this.txtTotalAmount.ReadOnly = true;
+            this.txtTotalAmount.Size = new System.Drawing.Size(157, 33);
+            this.txtTotalAmount.TabIndex = 13;
             // 
             // gbUserInformation
             // 
@@ -217,6 +220,7 @@
             this.btnPurchase.TabIndex = 15;
             this.btnPurchase.Text = "Purchase";
             this.btnPurchase.UseVisualStyleBackColor = false;
+            this.btnPurchase.Click += new System.EventHandler(this.btnPurchase_Click);
             // 
             // Purchase
             // 
@@ -225,14 +229,14 @@
             this.ClientSize = new System.Drawing.Size(736, 612);
             this.Controls.Add(this.btnPurchase);
             this.Controls.Add(this.gbUserInformation);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTotalAmount);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtAvailableTickets);
             this.Controls.Add(this.txtPrice);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.txtShowTime);
+            this.Controls.Add(this.txtShowDate);
             this.Controls.Add(this.txtDuration);
             this.Controls.Add(this.txtGenre);
             this.Controls.Add(this.cmbMovies);
@@ -261,14 +265,14 @@
         private System.Windows.Forms.ComboBox cmbMovies;
         private System.Windows.Forms.Label txtGenre;
         private System.Windows.Forms.Label txtDuration;
+        private System.Windows.Forms.Label txtShowDate;
         private System.Windows.Forms.Label txtShowTime;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label txtPrice;
         private System.Windows.Forms.Label txtAvailableTickets;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTotalAmount;
         private System.Windows.Forms.GroupBox gbUserInformation;
         private System.Windows.Forms.Label txtCustomerName;
         private System.Windows.Forms.Button btnPurchase;

@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Controller\AccountController.cs" />
     <Compile Include="Controller\CustomerController.cs" />
+    <Compile Include="Controller\MovieController.cs" />
     <Compile Include="Controller\TicketController.cs" />
     <Compile Include="Model\SqlDbDataAccess.cs" />
     <Compile Include="View\Customer\CustomerMenu.cs">

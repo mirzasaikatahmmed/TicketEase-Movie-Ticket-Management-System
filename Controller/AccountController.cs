@@ -16,5 +16,19 @@ namespace TicketEase___Movie_Ticket_Management_System.Controller
         {
             return userModel.Login(model.Email, model.Password);
         }
+        public bool Register(RegisterViewModel model)
+        {
+            User user = new User
+            {
+                Name = model.Name,
+                Email = model.Email,
+                Password = model.Password,
+                PhoneNumber = model.PhoneNumber,
+                DateOfBirth = model.DateOfBirth
+            };
+
+            return user.Register();
+        }
+
     }
 }

@@ -31,7 +31,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSaveChanges = new System.Windows.Forms.Button();
-            this.txtCreatedAt = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtRole = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -77,14 +77,15 @@
             this.btnSaveChanges.TabIndex = 29;
             this.btnSaveChanges.Text = "Save";
             this.btnSaveChanges.UseVisualStyleBackColor = false;
+            this.btnSaveChanges.Click += new System.EventHandler(this.btnSaveChanges_Click);
             // 
-            // txtCreatedAt
+            // txtPassword
             // 
-            this.txtCreatedAt.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold);
-            this.txtCreatedAt.Location = new System.Drawing.Point(456, 333);
-            this.txtCreatedAt.Name = "txtCreatedAt";
-            this.txtCreatedAt.Size = new System.Drawing.Size(241, 33);
-            this.txtCreatedAt.TabIndex = 28;
+            this.txtPassword.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.txtPassword.Location = new System.Drawing.Point(456, 333);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(241, 33);
+            this.txtPassword.TabIndex = 28;
             // 
             // label6
             // 
@@ -92,9 +93,9 @@
             this.label6.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(451, 300);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(149, 30);
+            this.label6.Size = new System.Drawing.Size(109, 30);
             this.label6.TabIndex = 27;
-            this.label6.Text = "Creation Date:";
+            this.label6.Text = "Password:";
             // 
             // txtRole
             // 
@@ -207,7 +208,7 @@
             this.ClientSize = new System.Drawing.Size(736, 612);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSaveChanges);
-            this.Controls.Add(this.txtCreatedAt);
+            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtRole);
             this.Controls.Add(this.label7);
@@ -224,6 +225,7 @@
             this.Name = "EditProfile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditProfile";
+            this.Load += new System.EventHandler(this.EditProfile_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -236,7 +238,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSaveChanges;
-        private System.Windows.Forms.TextBox txtCreatedAt;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtRole;
         private System.Windows.Forms.Label label7;

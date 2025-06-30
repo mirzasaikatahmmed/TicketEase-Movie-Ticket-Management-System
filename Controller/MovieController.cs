@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,16 +8,13 @@ using TicketEase___Movie_Ticket_Management_System.Model;
 
 namespace TicketEase___Movie_Ticket_Management_System.Controller
 {
-    public class CustomerController
+    public class MovieController
     {
-        public User GetCurrentUser()
-        {
-            return User.Current;
-        }
+        private Movie movieModel = new Movie();
 
-        public bool UpdateProfile(User updatedUser)
+        public DataTable GetAllMovies()
         {
-            return updatedUser.UpdateProfile();
+            return movieModel.GetAll();
         }
     }
 }
