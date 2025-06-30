@@ -38,7 +38,7 @@ namespace TicketEase___Movie_Ticket_Management_System.View
 
             RegisterViewModel model = new RegisterViewModel
             {
-                Name = tbEmail.Text,
+                Name = tbName.Text,
                 Email = tbEmail.Text,
                 Password = tbPassword.Text,
                 PhoneNumber = tbEmail.Text,
@@ -52,7 +52,9 @@ namespace TicketEase___Movie_Ticket_Management_System.View
                 if (success)
                 {
                     MessageBox.Show("Registration successful! You can now log in.");
-                    this.Close();
+                    Login loginForm = new Login();
+                    loginForm.Show();
+                    this.Hide();
                 }
                 else
                 {
@@ -63,6 +65,18 @@ namespace TicketEase___Movie_Ticket_Management_System.View
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void llLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Login loginForm = new Login();
+            loginForm.Show();
+            this.Hide();
         }
     }
 }

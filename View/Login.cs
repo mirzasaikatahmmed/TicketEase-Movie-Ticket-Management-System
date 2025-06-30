@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using TicketEase___Movie_Ticket_Management_System.Controller;
 using TicketEase___Movie_Ticket_Management_System.Model;
 using TicketEase___Movie_Ticket_Management_System.Model.ViewModels;
+using TicketEase___Movie_Ticket_Management_System.View;
 using TicketEase___Movie_Ticket_Management_System.View.Customer;
 using static System.Collections.Specialized.BitVector32;
 
@@ -48,6 +49,18 @@ namespace TicketEase___Movie_Ticket_Management_System
             {
                 MessageBox.Show("Login failed. Invalid credentials.");
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void llRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Register register = new Register();
+            register.Show();
+            this.Hide();
         }
     }
 }

@@ -24,7 +24,8 @@ namespace TicketEase___Movie_Ticket_Management_System.Controller
                 Email = model.Email,
                 Password = model.Password,
                 PhoneNumber = model.PhoneNumber,
-                DateOfBirth = model.DateOfBirth
+                DateOfBirth = model.DateOfBirth,
+                CreatedAt = DateTime.Now
             };
 
             return user.Register();

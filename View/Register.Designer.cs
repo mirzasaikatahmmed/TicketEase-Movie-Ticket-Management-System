@@ -120,9 +120,9 @@
             this.label2.Font = new System.Drawing.Font("Lora SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(28, 86);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 30);
+            this.label2.Size = new System.Drawing.Size(67, 30);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Email";
+            this.label2.Text = "Name";
             // 
             // llLogin
             // 
@@ -134,6 +134,7 @@
             this.llLogin.TabIndex = 7;
             this.llLogin.TabStop = true;
             this.llLogin.Text = "Login";
+            this.llLogin.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llLogin_LinkClicked);
             // 
             // btnRegister
             // 
@@ -203,6 +204,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 

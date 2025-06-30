@@ -57,5 +57,10 @@ namespace TicketEase___Movie_Ticket_Management_System.View.Customer
             loginForm.Show();
             this.Hide();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

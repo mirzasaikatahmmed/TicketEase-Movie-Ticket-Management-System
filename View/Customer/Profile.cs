@@ -32,8 +32,12 @@ namespace TicketEase___Movie_Ticket_Management_System.View.Customer
 
         private void btnEditProfile_Click(object sender, EventArgs e)
         {
-            new EditProfile().Show();
-            this.Close();
+            EditProfile editProfile = new EditProfile();
+            editProfile.ShowDialog();
+            if (editProfile.DialogResult == DialogResult.OK)
+            {
+                Profile_Load(sender, e);
+            }
         }
     }
 }

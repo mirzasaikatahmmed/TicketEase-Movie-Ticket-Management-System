@@ -66,5 +66,10 @@ namespace TicketEase___Movie_Ticket_Management_System.View.Customer
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
